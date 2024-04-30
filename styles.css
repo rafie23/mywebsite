@@ -14,47 +14,33 @@ body {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease;
+    display: flex; /* Added */
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Makes it circular */
+    overflow: hidden; /* Hides image overflow */
+    margin-right: 20px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    flex-grow: 1; /* Added */
 }
 
 h1 {
     text-align: center;
     color: #007bff;
-    animation: pulse 1s infinite alternate;
-}
-
-@keyframes pulse {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
 }
 
 p {
     text-align: justify;
-    animation: slideIn 1s ease;
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 ul {
