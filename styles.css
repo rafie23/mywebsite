@@ -14,8 +14,7 @@ body {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center; /* Align items vertically */
+    position: relative; /* Add positioning */
 }
 
 .profile-pic {
@@ -23,7 +22,9 @@ body {
     height: 150px;
     border-radius: 50%; /* Makes it circular */
     overflow: hidden; /* Hides image overflow */
-    margin-right: 20px;
+    position: absolute; /* Position absolutely */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
 }
 
 .profile-pic img {
@@ -33,7 +34,7 @@ body {
 }
 
 .content {
-    flex-grow: 1;
+    padding-left: 200px; /* Add padding to the left of the content to make space for the profile picture */
 }
 
 h1 {
