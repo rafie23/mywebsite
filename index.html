@@ -87,8 +87,9 @@
             $('.nav-link').click(function(e) {
                 e.preventDefault();
                 var targetId = $(this).attr('href');
+                var offset = $(targetId).offset().top - $('.navbar').outerHeight();
                 $('html, body').animate({
-                    scrollTop: $(targetId).offset().top - $('.navbar').outerHeight()
+                    scrollTop: offset
                 }, 1000);
             });
         });
