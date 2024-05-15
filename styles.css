@@ -45,3 +45,11 @@ li::before {
 .container {
     margin-top: 70px; /* Ensure space for fixed navbar */
 }
+
+.pt-5 {
+    padding-top: 3rem !important;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
