@@ -88,7 +88,7 @@
                 e.preventDefault();
                 var targetId = $(this).attr('href');
                 $('html, body').animate({
-                    scrollTop: $(targetId).offset().top
+                    scrollTop: $(targetId).offset().top - $('.navbar').outerHeight()
                 }, 1000);
             });
         });
