@@ -8,7 +8,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body data-spy="scroll" data-target="#navbarNav" data-offset="70">
+<body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Rafie's Portfolio</a>
@@ -18,13 +18,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#about" data-toggle="tab">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#skills" data-toggle="tab">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#contact" data-toggle="tab">Contact</a>
                 </li>
             </ul>
         </div>
@@ -32,38 +32,44 @@
 
     <!-- Main Content -->
     <div class="container mt-5 pt-5">
-        <div id="about" class="row pt-5">
-            <div class="col-md-4 text-center">
-                <div class="profile-pic mx-auto">
-                    <img src="me.jpg" alt="Rafie's Profile Picture" class="img-fluid rounded-circle mb-3">
+        <div class="tab-content">
+            <div id="about" class="tab-pane fade show active">
+                <div class="row pt-5">
+                    <div class="col-md-4 text-center">
+                        <div class="profile-pic mx-auto">
+                            <img src="me.jpg" alt="Rafie's Profile Picture" class="img-fluid rounded-circle mb-3">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="text-primary text-center">Rafie's Portfolio</h1>
+                        <p class="text-center">Hi, my name is Rafie. Welcome to my portfolio.</p>
+                        <h2>About Me</h2>
+                        <p>I am a web developer with experience in building responsive websites and web applications...</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-8">
-                <h1 class="text-primary text-center">Rafie's Portfolio</h1>
-                <p class="text-center">Hi, my name is Rafie. Welcome to my portfolio.</p>
-                <h2>About Me</h2>
-                <p>I am a web developer with experience in building responsive websites and web applications...</p>
+            <div id="skills" class="tab-pane fade">
+                <div class="row pt-5">
+                    <div class="col-12">
+                        <h2>Skills</h2>
+                        <ul class="list-unstyled">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div id="skills" class="row pt-5">
-            <div class="col-12">
-                <h2>Skills</h2>
-                <ul class="list-unstyled">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="contact" class="row pt-5">
-            <div class="col-12">
-                <h2>Contact Information</h2>
-                <p>Email: <a href="mailto:rafie@example.com">rafie@example.com</a></p>
-                <p>Phone: +1234567890</p>
+            <div id="contact" class="tab-pane fade">
+                <div class="row pt-5">
+                    <div class="col-12">
+                        <h2>Contact Information</h2>
+                        <p>Email: <a href="mailto:rafie@example.com">rafie@example.com</a></p>
+                        <p>Phone: +1234567890</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -77,9 +83,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        // Initialize Scrollspy
-        $('body').scrollspy({ target: '#navbarNav', offset: 70 });
-    </script>
 </body>
 </html>
