@@ -8,9 +8,9 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="70">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Rafie's Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,8 +31,8 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="container mt-5">
-        <div class="row">
+    <div class="container mt-5 pt-5">
+        <div id="about" class="row pt-5">
             <div class="col-md-4 text-center">
                 <div class="profile-pic mx-auto">
                     <img src="me.jpg" alt="Rafie's Profile Picture" class="img-fluid rounded-circle mb-3">
@@ -41,9 +41,14 @@
             <div class="col-md-8">
                 <h1 class="text-primary text-center">Rafie's Portfolio</h1>
                 <p class="text-center">Hi, my name is Rafie. Welcome to my portfolio.</p>
-                <h2 id="about">About Me</h2>
+                <h2>About Me</h2>
                 <p>I am a web developer with experience in building responsive websites and web applications...</p>
-                <h2 id="skills">Skills</h2>
+            </div>
+        </div>
+
+        <div id="skills" class="row pt-5">
+            <div class="col-12">
+                <h2>Skills</h2>
                 <ul class="list-unstyled">
                     <li>HTML</li>
                     <li>CSS</li>
@@ -51,7 +56,12 @@
                     <li>React</li>
                     <li>Node.js</li>
                 </ul>
-                <h2 id="contact">Contact Information</h2>
+            </div>
+        </div>
+
+        <div id="contact" class="row pt-5">
+            <div class="col-12">
+                <h2>Contact Information</h2>
                 <p>Email: <a href="mailto:rafie@example.com">rafie@example.com</a></p>
                 <p>Phone: +1234567890</p>
             </div>
