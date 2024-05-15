@@ -18,60 +18,64 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a id="about-tab" class="nav-link" href="#about" data-toggle="tab">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
+                    <a id="skills-tab" class="nav-link" href="#skills" data-toggle="tab">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a id="contact-tab" class="nav-link" href="#contact" data-toggle="tab">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <div class="container mt-5 pt-5">
-        <div class="tab-content">
-            <div id="about" class="tab-pane fade show active">
-                <div class="row pt-5">
-                    <div class="col-md-4 text-center">
-                        <div class="profile-pic mx-auto">
-                            <img src="me.jpg" alt="Rafie's Profile Picture" class="img-fluid rounded-circle mb-3">
+    <div class="wrapper">
+        <div class="container mt-5 pt-5">
+            <div class="tab-content">
+                <div id="about" class="tab-pane fade show active">
+                    <div class="row pt-5">
+                        <div class="col-md-4 text-center">
+                            <div class="profile-pic mx-auto">
+                                <img src="me.jpg" alt="Rafie's Profile Picture" class="img-fluid rounded-circle mb-3">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h1 class="text-primary text-center">Rafie's Portfolio</h1>
+                            <p class="text-center">Hi, my name is Rafie. Welcome to my portfolio.</p>
+                            <h2>About Me</h2>
+                            <p>I'm a cybersecurity enthusiast with a BS in Computer Engineering and 4 years of IT desktop support experience. Currently, I'm a Senior DevOps Platform Engineer at Trend Micro, passionate about fortifying systems. I'm also exploring prompt engineering to enhance my skills further.</p>
                         </div>
                     </div>
-                    <div class="col-md-8">
-                        <h1 class="text-primary text-center">Rafie's Portfolio</h1>
-                        <p class="text-center">Hi, my name is Rafie. Welcome to my portfolio.</p>
-                        <h2>About Me</h2>
-                        <p>I'm a cybersecurity enthusiast with a BS in Computer Engineering and 4 years of IT desktop support experience. Currently, I'm a Senior DevOps Platform Engineer at Trend Micro, passionate about fortifying systems. I'm also exploring prompt engineering to enhance my skills further.</p>
+                </div>
+                <div id="skills" class="tab-pane fade">
+                    <div class="row pt-5">
+                        <div class="col-12">
+                            <h2>Skills</h2>
+                            <ul class="list-unstyled">
+                                <li>..</li>
+                                <li>..</li>
+                                <li>..</li>
+                                <li>..</li>
+                                <li>...</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="skills" class="tab-pane fade">
-                <div class="row pt-5">
-                    <div class="col-12">
-                        <h2>Skills</h2>
-                        <ul class="list-unstyled">
-                            <li>..</li>
-                            <li>..</li>
-                            <li>..</li>
-                            <li>..</li>
-                            <li>...</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="contact" class="tab-pane fade">
-                <div class="row pt-5">
-                    <div class="col-12">
-                        <h2>Contact Information</h2>
-                        <p>Email: <a href="mailto:rafie@example.com">rafie@example.com</a></p>
-                        <p>Phone: +1234567890</p>
+                <div id="contact" class="tab-pane fade">
+                    <div class="row pt-5">
+                        <div class="col-12">
+                            <h2>Contact Information</h2>
+                            <p>Email: <a href="mailto:rafie@example.com">rafie@example.com</a></p>
+                            <p>Phone: +1234567890</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Push the footer to the bottom -->
+        <div class="push"></div>
     </div>
 
     <!-- Footer -->
@@ -79,18 +83,15 @@
         &copy; 2024 Rafie's Portfolio. All rights reserved.
     </footer>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function() {
-            // Smooth scroll to section when navbar link is clicked
-            $('.nav-link').click(function(e) {
-                e.preventDefault();
-                var targetId = $(this).attr('href');
-                var offset = $(targetId).offset().top - $('.navbar').outerHeight();
-                $('html, body').animate({
-                    scrollTop: offset
-                }, 1000);
+        // JavaScript to remove active class from tab links when clicked
+        $(document).ready(function(){
+            $('.nav-link').click(function(){
+                $('.nav-link').removeClass('active');
             });
         });
     </script>
