@@ -53,3 +53,11 @@ li::before {
 .mt-5 {
     margin-top: 3rem !important;
 }
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; /* Choose your desired background color */
+    color: white; /* Choose your desired text color */
+    padding: 15px 0; /* Adjust padding as needed */
+}
