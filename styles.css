@@ -8,37 +8,32 @@ body {
 }
 
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative; /* Add positioning */
+    padding: 20px;
 }
 
 .profile-pic {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Makes it circular */
-    overflow: hidden; /* Hides image overflow */
-    position: absolute; /* Position absolutely */
-    top: 20px; /* Distance from the top */
-    left: 20px; /* Distance from the left */
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px; /* Adjust spacing */
 }
 
 .profile-pic img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Ensure the entire image is visible within the circular frame */
+    object-fit: cover;
 }
 
 .content {
-    padding-left: 200px; /* Add padding to the left of the content to make space for the profile picture */
+    margin-top: 20px; /* Add margin to separate content */
 }
 
 h1 {
-    text-align: center;
     color: #007bff;
 }
 
@@ -47,7 +42,6 @@ p {
 }
 
 ul {
-    list-style-type: none;
     padding: 0;
 }
 
