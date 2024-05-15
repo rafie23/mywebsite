@@ -18,13 +18,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about" data-toggle="tab">About</a>
+                    <a id="about-tab" class="nav-link" href="#about" data-toggle="tab">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills" data-toggle="tab">Skills</a>
+                    <a id="skills-tab" class="nav-link" href="#skills" data-toggle="tab">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact" data-toggle="tab">Contact</a>
+                    <a id="contact-tab" class="nav-link" href="#contact" data-toggle="tab">Contact</a>
                 </li>
             </ul>
         </div>
@@ -83,5 +83,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to reset active tab on click
+        $(document).ready(function(){
+            $('.nav-link').click(function(){
+                var $this = $(this);
+                if ($this.hasClass('active')) {
+                    $('.nav-link').removeClass('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
