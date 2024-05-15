@@ -55,9 +55,10 @@ li::before {
 }
 footer {
     position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #343a40; /* Choose your desired background color */
-    color: white; /* Choose your desired text color */
-    padding: 15px 0; /* Adjust padding as needed */
+    background-color: #343a40; /* Adjust as needed */
+    color: white; /* Adjust as needed */
+    padding: 15px 0; /* Adjust as needed */
 }
