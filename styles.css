@@ -36,3 +36,12 @@ li::before {
     margin-right: 8px;
     color: #007bff;
 }
+
+.navbar-nav .nav-item .nav-link.active {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.container {
+    margin-top: 70px; /* Ensure space for fixed navbar */
+}
