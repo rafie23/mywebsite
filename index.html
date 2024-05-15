@@ -31,47 +31,51 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="container mt-5 pt-5">
-        <div class="tab-content">
-            <div id="about" class="tab-pane fade show active">
-                <div class="row pt-5">
-                    <div class="col-md-4 text-center">
-                        <div class="profile-pic mx-auto">
-                            <img src="me.jpg" alt="Rafie's Profile Picture" class="img-fluid rounded-circle mb-3">
+    <div class="wrapper">
+        <div class="container mt-5 pt-5">
+            <div class="tab-content">
+                <div id="about" class="tab-pane fade show active">
+                    <div class="row pt-5">
+                        <div class="col-md-4 text-center">
+                            <div class="profile-pic mx-auto">
+                                <img src="me.jpg" alt="Rafie's Profile Picture" class="img-fluid rounded-circle mb-3">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h1 class="text-primary text-center">Rafie's Portfolio</h1>
+                            <p class="text-center">Hi, my name is Rafie. Welcome to my portfolio.</p>
+                            <h2>About Me</h2>
+                            <p>I'm a cybersecurity enthusiast with a BS in Computer Engineering and 4 years of IT desktop support experience. Currently, I'm a Senior DevOps Platform Engineer at Trend Micro, passionate about fortifying systems. I'm also exploring prompt engineering to enhance my skills further.</p>
                         </div>
                     </div>
-                    <div class="col-md-8">
-                        <h1 class="text-primary text-center">Rafie's Portfolio</h1>
-                        <p class="text-center">Hi, my name is Rafie. Welcome to my portfolio.</p>
-                        <h2>About Me</h2>
-                        <p>I'm a cybersecurity enthusiast with a BS in Computer Engineering and 4 years of IT desktop support experience. Currently, I'm a Senior DevOps Platform Engineer at Trend Micro, passionate about fortifying systems. I'm also exploring prompt engineering to enhance my skills further.</p>
+                </div>
+                <div id="skills" class="tab-pane fade">
+                    <div class="row pt-5">
+                        <div class="col-12">
+                            <h2>Skills</h2>
+                            <ul class="list-unstyled">
+                                <li>..</li>
+                                <li>..</li>
+                                <li>..</li>
+                                <li>..</li>
+                                <li>...</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="skills" class="tab-pane fade">
-                <div class="row pt-5">
-                    <div class="col-12">
-                        <h2>Skills</h2>
-                        <ul class="list-unstyled">
-                            <li>..</li>
-                            <li>..</li>
-                            <li>..</li>
-                            <li>..</li>
-                            <li>...</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="contact" class="tab-pane fade">
-                <div class="row pt-5">
-                    <div class="col-12">
-                        <h2>Contact Information</h2>
-                        <p>Email: <a href="mailto:rafie@example.com">rafie@example.com</a></p>
-                        <p>Phone: +1234567890</p>
+                <div id="contact" class="tab-pane fade">
+                    <div class="row pt-5">
+                        <div class="col-12">
+                            <h2>Contact Information</h2>
+                            <p>Email: <a href="mailto:rafie@example.com">rafie@example.com</a></p>
+                            <p>Phone: +1234567890</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Push the footer to the bottom -->
+        <div class="push"></div>
     </div>
 
     <!-- Footer -->
@@ -83,16 +87,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        // JavaScript to reset active tab on click
-        $(document).ready(function(){
-            $('.nav-link').click(function(){
-                var $this = $(this);
-                if ($this.hasClass('active')) {
-                    $('.nav-link').removeClass('active');
-                }
-            });
-        });
-    </script>
 </body>
 </html>
