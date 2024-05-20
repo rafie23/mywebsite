@@ -1,5 +1,6 @@
+/* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -10,6 +11,7 @@ body {
     width: 150px;
     height: 150px;
     overflow: hidden;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .profile-pic img {
@@ -18,16 +20,19 @@ body {
     object-fit: cover;
 }
 
-h1 {
+h1, h2 {
     color: #007bff;
+    animation: fadeInDown 1s ease-in-out;
 }
 
 p {
     text-align: justify;
+    animation: fadeInUp 1.5s ease-in-out;
 }
 
 ul {
     padding: 0;
+    list-style-type: none;
 }
 
 li::before {
@@ -43,28 +48,36 @@ li::before {
 
 .container {
     margin-top: 70px; /* Ensure space for fixed navbar */
+    animation: fadeIn 1s ease-in-out;
 }
 
-.pt-5 {
-    padding-top: 3rem !important;
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Footer height */
+    line-height: 60px; /* Vertically center the text */
+    background-color: #333;
+    color: white;
+    text-align: center;
 }
 
-.mt-5 {
-    margin-top: 3rem !important;
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-/* Footer stick to bottom */
-html, body {
-    height: 100%;
-    margin: 0;
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.wrapper {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.push {
-    flex-grow: 1;
+.progress-bar {
+    transition: width 1s ease-in-out;
 }
