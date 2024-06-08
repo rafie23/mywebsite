@@ -130,3 +130,22 @@ html {
     background-color: #0056b3;
     color: white !important;
 }
+
+/* Flexbox alignment for the about section */
+#about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+#about .col-md-4 {
+    display: flex;
+    justify-content: center;
+}
+
+#about .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
