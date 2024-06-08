@@ -81,3 +81,40 @@ li::before {
 .progress-bar {
     transition: width 1s ease-in-out;
 }
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    .footer {
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+/* Accessibility Enhancements */
+:focus {
+    outline: 2px dashed #007bff;
+    outline-offset: 4px;
+}
+
+.navbar-nav .nav-item .nav-link:focus {
+    background-color: #0056b3;
+    color: white !important;
+}
