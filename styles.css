@@ -64,11 +64,6 @@ li::before {
     color: #007bff;
 }
 
-.navbar-nav .nav-item .nav-link.active {
-    font-weight: bold;
-    color: #007bff !important;
-}
-
 .container {
     margin-top: 70px; /* Ensure space for fixed navbar */
     animation: fadeIn 1s ease-in-out;
@@ -126,25 +121,20 @@ html {
     outline-offset: 4px;
 }
 
-.navbar-nav .nav-item .nav-link:focus {
-    background-color: #0056b3;
-    color: white !important;
-}
-
 /* Flexbox alignment for the about section */
-#about .row {
+.row {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: left;
 }
 
-#about .col-md-4 {
+.col-md-4 {
     display: flex;
     justify-content: center;
 }
 
-#about .col-md-8 {
+.col-md-8 {
     display: flex;
     flex-direction: column;
     justify-content: center;
