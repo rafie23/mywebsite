@@ -1,10 +1,28 @@
 /* styles.css */
-body {
-    font-family: 'Open Sans', sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
     background-color: #f4f4f4;
     color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
 
 .profile-pic {
@@ -49,17 +67,6 @@ li::before {
 .container {
     margin-top: 70px; /* Ensure space for fixed navbar */
     animation: fadeIn 1s ease-in-out;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px; /* Footer height */
-    line-height: 60px; /* Vertically center the text */
-    background-color: #333;
-    color: white;
-    text-align: center;
 }
 
 /* Keyframes for animations */
